@@ -7,10 +7,10 @@ _start:                                         ;main routine
     mov     ecx,msg                             ;message to write
     mov     ebx,1                               ;pipe to standard out
     mov     eax,4                               ;system call to write to eax
-    int     0x80                              
+    int     0x80                                ;run system call to write messasge
 
     mov     eax,1                               ;system call to exit
-    int     0x80                                
+    int     0x80                                ;run system call to exit
 
 section     .data
 
